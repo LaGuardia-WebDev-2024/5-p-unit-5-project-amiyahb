@@ -20,12 +20,95 @@ Select TWO Additional Features to Add
 <head>
   <title>Unit 5 Project</title>
   <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Fredericka+the+Great&family=Goblin+One&family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
   <style>
+    body {
+      background-color: rgb(151, 62, 62);
+    }
+    .Macys {
+      font-family: "Climate Crisis", sans-serif;
+      color: coral;
+      text-align: center;
+    }
 
+    .text {
+      font-family: "Kumbh Sans", sans-serif;
+    }
+    h1 {
+      font-size: 3em;
+    }
+
+    p{
+      color: aliceblue;
+    }
+
+    .flip-card {
+  background-color: transparent;
+  width: 100px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; 
+  margin: 100px;
+ 
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+
+.flip-card-back {
+  background-color: rgb(20, 21, 22);
+  color: white;
+  transform: rotateY(180deg);
+}
   </style>
 </head>
 <body>
-
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://i.pinimg.com/originals/f3/af/ac/f3afacb66faa0e3b033ff82c2e34af8f.gif" alt="Avatar" style="width:300%;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>YOU'RE INVITED TO...<br>
+      THE MACYS THANKSGIVING DAY PARADE</h1>
+    </div>
+  </div>
+</div>
+<h1 class="Macys">MACYS THANKSGIVING DAY PARADE</h1>
+ <p class="text"> This year I get the privilege to participate in the Macy's Thanksgiving Day Parade. You all are welcome to come or enjoy from your couches on tv!</p>
  
 
 </body>
