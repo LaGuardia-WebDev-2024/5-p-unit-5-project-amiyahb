@@ -6,7 +6,7 @@ Requirements
 
 Select TWO Additional Features to Add  
 [ no ] Feature 1 - Flexbox
-[ no ] Feature 2 - Flip Card
+[ yes ] Feature 2 - Flip Card
 [ no ] Feature 3 - Animation
 [ no ] Feature 4 - Linear Gradient
 [ no ] Feature 5 - Use a .Gif
@@ -38,6 +38,7 @@ Select TWO Additional Features to Add
 
     .text {
       font-family: "Kumbh Sans", sans-serif;
+      font-size: 1.5em;
     }
     h1 {
       font-size: 3em;
@@ -48,6 +49,7 @@ Select TWO Additional Features to Add
       color: aliceblue;
       font-size: 1.5em;
       text-align: center;
+       font-family: "Kumbh Sans", sans-serif;
     }
 
     p{
@@ -67,10 +69,17 @@ Select TWO Additional Features to Add
 
     .History {
       background-color: coral;
-      width: 50%;
+      width: 45%;
       text-align: center;
-      height: 200px;
+      height: 300px;
       overflow-y: auto;
+      padding: 5px;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap ;
     }
 
   .flip-card {
@@ -119,6 +128,17 @@ Select TWO Additional Features to Add
   color: white;
   transform: rotateY(180deg);
 }
+
+p a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+
+#Wednesday {
+  padding: 50px;
+  height: 80px;
+}
   </style>
 </head>
 <body>
@@ -149,10 +169,23 @@ Select TWO Additional Features to Add
 <h1 class="Macys">MACYS THANKSGIVING DAY PARADE</h1>
 
  <p class="text"> This year I get the privilege to participate in the Macy's Thanksgiving Day Parade. You all are welcome to come or enjoy from your couches on tv!</p>
- 
+ <div class="info">
 <div class="History">
   <h2>History</h2>
-  <p>Macy's started the Thanksgiving Day Parade in 1924 to boost holiday sales and celebrate the opening of its newly expanded Herald Square store. Employees, many of them European immigrants, wanted to create a festive celebration like those in their home countries and to kick off the Christmas shopping season, which also helped them compete with rival department store Gimbel's. The first parade, initially called the Macy's Christmas Parade, featured employees in costume, floats, and animals on <span class="last-sentence">loan from the Central Park Zoo.</span></p>
+  <p class="text">Macy's started the Thanksgiving Day Parade in 1924 to boost holiday sales and celebrate the opening of its newly expanded Herald Square store. Employees, many of them European immigrants, wanted to create a festive celebration like those in their home countries and to kick off the Christmas shopping season, which also helped them compete with rival department store Gimbel's. The first parade, initially called the Macy's Christmas Parade, featured employees in costume, floats, and animals on <span class="last-sentence">loan from the Central Park Zoo.</span></p>
 </div>
+<div class="History">
+<h2>Who am I in the parade?</h2>
+  <p class="text">This parade I am...<br><br><br><br>
+   TOY DOLLS!! I have wooden skin and a silver key on my back. </p>
+    <img src="https://people.com/thmb/xfBCVXHqcH57rSFEYWbcHfoUol4=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/taylor-momsen-macys-thanksgiving-parade-112725-1-045669d9591d4655a365e06a0b6f93bf.jpg" alt="Picture of dolls" width="300">
+    </div>
+    <div class="History" id="Wednesday">
+      <p class="text"> I was really excited to be toys this year because last year I was Wednesday on the promoting season 2 of the Netflix Series <em>Wednesday</em>.</p>
+      
+     <p class="text"><a href="lastyear.html">Throwback to last year!</a></p>
+    </div>
+  </div>
+    </body>
 </body>
 </html>
