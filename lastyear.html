@@ -1,0 +1,85 @@
+<!-- Unit 5 Project
+Requirements
+[  ] <div> and <span>
+[  ] border:, margin:, and padding: 
+[  ] Three Images
+
+Select TWO Additional Features to Add  
+[ no ] Feature 1 - Flexbox
+[ yes ] Feature 2 - Flip Card
+[ no ] Feature 3 - Animation
+[ no ] Feature 4 - Linear Gradient
+[ no ] Feature 5 - Use a .Gif
+[ no ] Feature 6 - Unique Border Styles
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Unit 5 Project</title>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Fredericka+the+Great&family=Goblin+One&family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: black;
+    }
+
+    .text {
+      font-family: "Kumbh Sans", sans-serif;
+      font-size: 1.5em;
+    }
+
+ h1 {
+    overflow: hidden;
+    border-right: .15em solid white;
+    margin: 0 auto; 
+    letter-spacing: .15em;
+      animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+
+    font-family: "Climate Crisis", sans-serif;
+    color: aliceblue;
+    text-align: center;
+    font-size: 3em;
+  }
+
+  @keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+ }
+
+  .pics {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+
+  p a {
+  text-decoration: underline;
+  background-color: black;
+  color: white;
+  }
+  </style>
+</head>
+<body>
+<h1> Last Year on the Wednesday Float!!</h1>
+
+<div class="pics">
+<img src="https://nypost.com/wp-content/uploads/sites/2/2024/11/bishop-briggs-attends-2024-94456303.jpg?w=1024" alt="Picture of Wednesday Float" width="700"> 
+<img src="https://people.com/thmb/z-5LO9BdcDgLWd_FiRIZbKO-6aM=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/bishop-briggs-macy-thanksgiving-parade-2024-112824-1-215870fabcc44bb980a56c55d1c193f4.jpg" alt="Picture of Bishop Briggs" width="700">
+<img src="https://wwd.com/wp-content/uploads/2024/11/GettyImages-2186814040.jpg?w=800" alt="Picture of dancers" width="700">
+</div>
+
+<p class="text"><a href="index.html">Click here to go back to invite!!</a></p>
+
+</body>
+</html>

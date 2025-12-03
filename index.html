@@ -1,13 +1,13 @@
 <!-- Unit 5 Project
 Requirements
-[  ] <div> and <span>
-[  ] border:, margin:, and padding: 
-[  ] Three Images
+[ yes ] <div> and <span>
+[ yes ] border:, margin:, and padding: 
+[ yes ] Three Images
 
 Select TWO Additional Features to Add  
 [ no ] Feature 1 - Flexbox
-[ no ] Feature 2 - Flip Card
-[ no ] Feature 3 - Animation
+[ yes ] Feature 2 - Flip Card
+[ yes ] Feature 3 - Animation
 [ no ] Feature 4 - Linear Gradient
 [ no ] Feature 5 - Use a .Gif
 [ no ] Feature 6 - Unique Border Styles
@@ -20,13 +20,177 @@ Select TWO Additional Features to Add
 <head>
   <title>Unit 5 Project</title>
   <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Fredericka+the+Great&family=Goblin+One&family=Petit+Formal+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+
   <style>
+    body {
+      background-color: rgb(151, 62, 62);
+    }
+    .Macys {
+      font-family: "Climate Crisis", sans-serif;
+      color: coral;
+      text-align: center;
+    }
+
+    .text {
+      font-family: "Kumbh Sans", sans-serif;
+      font-size: 1.5em;
+    }
+    h1 {
+      font-size: 3em;
+      font-family: "Climate Crisis", sans-serif;
+    }
+
+    h2 {
+      color: aliceblue;
+      font-size: 1.5em;
+      text-align: center;
+       font-family: "Kumbh Sans", sans-serif;
+    }
+
+    p{
+      color: aliceblue;
+    }
+
+    .last-sentence {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
+    .pics {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap ;
+    }
+
+    .History {
+      background-color: coral;
+      width: 45%;
+      text-align: center;
+      height: 300px;
+      overflow-y: auto;
+      padding: 5px;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap ;
+    }
+
+  .flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 300px;
+  margin: 20px;
+  padding: 5px;
+  border: 5px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(151, 62, 62);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+p a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+}
+
+#Wednesday {
+  padding: 50px;
+  height: 80px;
+}
 
   </style>
 </head>
 <body>
-
+  <div class="pics">
+  <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img class="photo" src="https://i.pinimg.com/originals/f3/af/ac/f3afacb66faa0e3b033ff82c2e34af8f.gif" alt="Avatar" style="width:500px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>YOU'RE INVITED TO...</h1>
+    </div>
+  </div>
+</div>
+ <div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://i.pinimg.com/originals/f3/af/ac/f3afacb66faa0e3b033ff82c2e34af8f.gif" alt="Avatar" style="width:500px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>THE MACYS THANKSGIVING DAY PARADE!!</h1>
+    </div>
+  </div>
+</div>
+</div>
  
 
+<h1 class="Macys">MACYS THANKSGIVING DAY PARADE</h1>
+
+ <p class="text"> This year I get the privilege to participate in the Macy's Thanksgiving Day Parade. You all are welcome to come or enjoy from your couches on tv!</p>
+ <div class="info">
+<div class="History">
+  <h2>History</h2>
+  <p class="text">Macy's started the Thanksgiving Day Parade in 1924 to boost holiday sales and celebrate the opening of its newly expanded Herald Square store. Employees, many of them European immigrants, wanted to create a festive celebration like those in their home countries and to kick off the Christmas shopping season, which also helped them compete with rival department store Gimbel's. The first parade, initially called the Macy's Christmas Parade, featured employees in costume, floats, and animals on <span class="last-sentence">loan from the Central Park Zoo.</span></p>
+</div>
+<div class="History">
+<h2>Who am I in the parade?</h2>
+  <p class="text">This parade I am...<br><br><br><br>
+   TOY DOLLS!! I have wooden skin and a silver key on my back. </p>
+    <img src="https://people.com/thmb/xfBCVXHqcH57rSFEYWbcHfoUol4=/4000x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/taylor-momsen-macys-thanksgiving-parade-112725-1-045669d9591d4655a365e06a0b6f93bf.jpg" alt="Picture of dolls" width="500">
+    </div>
+    <div class="History" id="Wednesday">
+      <p class="text"> I was really excited to be toys this year because last year I was Wednesday on the promoting season 2 of the Netflix Series <em>Wednesday</em>.</p>
+      
+     <p class="text"><a href="lastyear.html">Throwback to last year!</a><br>
+    <strong>click here^^^</strong></p>
+
+    <p class="text"> I hope you enjoy</p>
+    </div>
+  </div>
+    </body>
 </body>
 </html>
